@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+    <nav style="background:#1565c0;box-shadow:0 2px 8px rgba(21,101,192,0.05);">
+    <ul style="display:flex;justify-content:center;list-style:none;margin:0;padding:0;">
+        <li style="margin:0 1rem;">
+            <a href="#purpose" style="color:#fff;text-decoration:none;font-weight:700;padding:1rem 0;display:inline-block;">活動主旨</a>
+        </li>
+        <li style="margin:0 1rem;">
+            <a href="#organizer" style="color:#fff;text-decoration:none;font-weight:700;padding:1rem 0;display:inline-block;">辦理單位</a>
+        </li>
+        <li style="margin:0 1rem;">
+            <a href="#rules" style="color:#fff;text-decoration:none;font-weight:700;padding:1rem 0;display:inline-block;">競賽辦法</a>
+        </li>
+        <li style="margin:0 1rem;">
+            <a href="#themes" style="color:#fff;text-decoration:none;font-weight:700;padding:1rem 0;display:inline-block;">主題與組別</a>
+        </li>
+        <li style="margin:0 1rem;">
+            <a href="#schedule" style="color:#fff;text-decoration:none;font-weight:700;padding:1rem 0;display:inline-block;">報名日程</a>
+        </li>
+        <li style="margin:0 1rem;">
+            <a href="#process" style="color:#fff;text-decoration:none;font-weight:700;padding:1rem 0;display:inline-block;">競賽流程</a>
+        </li>
+        <li style="margin:0 1rem;">
+            <a href="#criteria" style="color:#fff;text-decoration:none;font-weight:700;padding:1rem 0;display:inline-block;">評審標準</a>
+        </li>
+        <li style="margin:0 1rem;">
+            <a href="#reward" style="color:#fff;text-decoration:none;font-weight:700;padding:1rem 0;display:inline-block;">獎勵辦法</a>
+        </li>
+        <li style="margin:0 1rem;">
+            <a href="#notes" style="color:#fff;text-decoration:none;font-weight:700;padding:1rem 0;display:inline-block;">注意事項</a>
+        </li>
+        <li style="margin:0 1rem;">
+            <a href="#funding" style="color:#fff;text-decoration:none;font-weight:700;padding:1rem 0;display:inline-block;">經費來源</a>
+        </li>
+    </ul>
+</nav>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const sections = [
+        {id: 'purpose', idx: 0},
+        {id: 'organizer', idx: 1},
+        {id: 'rules', idx: 2},
+        {id: 'themes', idx: 3},
+        {id: 'schedule', idx: 4},
+        {id: 'process', idx: 5},
+        {id: 'criteria', idx: 6},
+        {id: 'reward', idx: 7},
+        {id: 'notes', idx: 8},
+        {id: 'funding', idx: 9}
+    ];
+    document.querySelectorAll('main section').forEach((sec, i) => {
+        if (sections[i]) sec.id = sections[i].id;
+    });
+});
+</script>
+<style>
+nav ul { flex-wrap: wrap; }
+@media (max-width: 800px) {
+    nav ul { flex-direction: column; align-items: center; }
+    nav ul li { margin: 0.5rem 0; }
+}
+</style></li>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>國立臺北教育大學 114教學科技應用設計競賽</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            margin: 0;
+            background: #eaf3fb;
+            color: #222;
+        }
+        header {
+            background: #1565c0;
+            color: #fff;
+            padding: 2rem 1rem 1rem 1rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0 0 0.5rem 0;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        header p {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(21,101,192,0.08);
+            padding: 2rem;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        section h2 {
+            color: #1565c0;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            border-left: 4px solid #1565c0;
+            padding-left: 0.5rem;
+            font-weight: 700;
+        }
+        ul, ol {
+            margin: 0.5rem 0 0.5rem 2rem;
+        }
+        .theme-list {
+            background: #e3f2fd;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        .table th, .table td {
+            border: 1px solid #bbdefb;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        .table th {
+            background: #1565c0;
+            color: #fff;
+        }
+        .table td {
+            background: #e3f2fd;
+        }
+        .btn {
+            display: inline-block;
+            background: #1565c0;
+            color: #fff;
+            padding: 0.7rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 700;
+            margin: 0.5rem 0;
+            transition: background 0.2s;
+        }
+        .btn:hover {
+            background: #0d47a1;
+        }
+        footer {
+            text-align: center;
+            color: #888;
+            padding: 1rem 0;
+            font-size: 0.95rem;
+            background: #e3f2fd;
+            border-top: 1px solid #bbdefb;
+            margin-top: 2rem;
+        }
+        @media (max-width: 600px) {
+            main { padding: 1rem; }
+            header { padding: 1rem 0.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>國立臺北教育大學<br>114教學科技應用設計競賽</h1>
+        <p>鼓勵學生運用數位科技創新教學，提升教材設計與創作能力</p>
+    </header>
+    <main>
+        <section>
+            <h2>一、活動主旨</h2>
+            <p>
+                鼓勵學生將數位科技應用於教學現場，強化教材設計與創作能力。期望靈活運用 VR、AI 技術及 Apple 教育工具，結合數位媒體、互動設計及多元評量方式，設計具創新性與實用性的教學應用，增強各領域之數位內容科技創建能力。
+            </p>
+        </section>
+        <section>
+            <h2>二、辦理單位</h2>
+            <ul>
+                <li>主辦單位：國立臺北教育大學教學發展中心</li>
+            </ul>
+        </section>
+        <section>
+            <h2>三、競賽辦法</h2>
+            <ul>
+                <li>參加對象：本校在學學生（含學士班、碩士班、碩士在職專班）。</li>
+                <li>每團隊成員人數 1 至 4 人，可邀請老師 1 名指導。</li>
+                <li>每位學生最多可報名 2 件作品，但同一作品不得重複投件於不同類別。</li>
+            </ul>
+        </section>
+        <section>
+            <h2>四、競賽主題與組別</h2>
+            <div class="theme-list">
+                <ol>
+                    <li><b>Uptale VR 教學應用設計組：</b>設計沉浸式教學場景，展現虛擬實境於教學現場之應用潛能。</li>
+                    <li><b>AI 小工具教學創新應用組：</b>發展 AI 工具於教學現場的應用，解決學習難題或提升學習成效。</li>
+                    <li><b>Apple 教育應用設計組：</b>結合 Apple 生態系工具進行教案或應用程式設計。</li>
+                </ol>
+            </div>
+        </section>
+        <section>
+            <h2>五、報名方式及日程</h2>
+            <ul>
+                <li>競賽報名：即日起至 114 年 11 月 7 日(五)截止。<br>
+                    <a class="btn" href="https://forms.gle/Hs9SkDYpiAaB2J9p6" target="_blank">線上報名</a>
+                </li>
+                <li>繳件時間：即日起至 114 年 12 月 14 日(日)截止。</li>
+                <li>得獎名單公布：預計於 115 年 1 月底於「教學發展中心」網頁公布，並以 Email 或電話通知。</li>
+            </ul>
+        </section>
+        <section>
+            <h2>六、競賽流程</h2>
+            <ol>
+                <li>競賽報名：網路線上報名，填妥資料表並上傳。</li>
+                <li>繳件資料：
+                    <ul>
+                        <li>計畫書（PDF）：包含組別、作品名稱、團隊介紹、創作理念、教學目標、內容規劃、預期成效。</li>
+                        <li>成品：如 Uptale VR 成品、AI 工具 Demo、Apple 教案或應用程式原型。</li>
+                        <li>作品導覽影片（mp4，10 分鐘內，HD1080P），上傳至 Youtube 並提供連結。</li>
+                        <li>個人資料保護聲明暨數位內容授權書。</li>
+                    </ul>
+                </li>
+                <li>繳交方式：
+                    <ul>
+                        <li>檔案上傳至：<a class="btn" href="https://forms.gle/PQ1AEJ1xBo3yRTZd6" target="_blank">作品繳交</a></li>
+                        <li>檔案命名：編號_團隊名_作品名_檔名，壓縮為 zip 檔再上傳。</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+        <section>
+            <h2>七、評審標準</h2>
+            <table class="table">
+                <tr>
+                    <th>評分項目</th>
+                    <th>占比</th>
+                </tr>
+                <tr>
+                    <td>完整性</td>
+                    <td>40%</td>
+                </tr>
+                <tr>
+                    <td>創意表現及互動應用</td>
+                    <td>30%</td>
+                </tr>
+                <tr>
+                    <td>實踐效益及未來延展性</td>
+                    <td>30%</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h2>八、獎勵辦法</h2>
+            <ul>
+                <li>特優（1 件）：獎金新台幣 8,000 元，每人獎狀 1 張。</li>
+                <li>優選（1 件）：獎金新台幣 5,000 元，每人獎狀 1 張。</li>
+                <li>佳作（2 件）：獎金新台幣 2,000 元，每人獎狀 1 張。</li>
+                <li>主辦方得視參賽件數或作品水準，調整獲獎情形。</li>
+            </ul>
+        </section>
+        <section>
+            <h2>九、注意事項</h2>
+            <ol>
+                <li>參賽作品需為參賽者/隊伍自行開發，涉及智慧財產權侵害者取消資格並追回獎項。</li>
+                <li>競賽屬非營利教育性質，使用非原創素材須註明來源。</li>
+                <li>著作人格權歸參賽隊伍，主辦單位擁有推廣活動及教育目的之財產權。</li>
+                <li>主辦單位得邀請獲獎隊伍參加相關課程與活動。</li>
+            </ol>
+        </section>
+        <section>
+            <h2>十、經費來源</h2>
+            <p>本案經費由教育部高教深耕計畫經費項下支應。</p>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 國立臺北教育大學教學發展中心
+    </footer>
+</body>
+</html>
