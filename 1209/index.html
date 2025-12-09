@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人網站</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; }
+        .navbar {
+            background: #f3c3db; /* 淡粉色 */
+            color: #fff;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: normal;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 1em;
+            font-weight: normal;
+            font-size: 1.1em;
+        }
+        .navbar .nav-links {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .social-icons {
+            display: flex;
+            align-items: center;
+            margin-left: 2em;
+        }
+        .navbar .social-icons a {
+            margin-left: 0.7em;
+            display: flex;
+            align-items: center;
+            font-size: 1.3em;
+        }
+        .navbar .social-icons svg {
+            width: 24px;
+            height: 24px;
+            fill: #fff;
+            transition: fill 0.2s;
+        }
+        .navbar .social-icons a:hover svg,
+        .navbar .social-icons a:hover {
+            fill: #333;
+            color: #333;
+        }
+        .banner {
+            background: url('https://picsum.photos/1200/300') center/cover no-repeat;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .container { max-width: 900px; margin: 2em auto; padding: 0 1em; }
+        .section { margin-bottom: 2em; }
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1em;
+        }
+        .portfolio-item {
+            background: #f5f5f5;
+            padding: 1em;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div>我的個人成果網頁</div>
+        <div class="nav-links">
+            <a href="#home">首頁</a>
+            <a href="#about">個人簡介</a>
+            <a href="#portfolio">作品集</a>
+            <a href="#account">帳號連結</a>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" title="Facebook">
+                    <svg viewBox="0 0 24 24"><path d="M22.675 0h-21.35C.6 0 0 .6 0 1.326v21.348C0 23.4.6 24 1.326 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.4 24 24 23.4 24 22.674V1.326C24 .6 23.4 0 22.675 0"/></svg>
+                </a>
+                <a href="https://instagram.com" target="_blank" title="Instagram">
+                    <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.974 1.246 2.241 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.974.974-2.241 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.974-1.246-2.241-1.308-3.608C2.175 15.797 2.163 15.417 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608C4.515 2.497 5.782 2.225 7.148 2.163 8.414 2.105 8.794 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.771.131 4.659.363 3.678 1.344c-.98.98-1.213 2.093-1.272 3.374C2.013 5.741 2 6.151 2 12c0 5.849.013 6.259.072 7.539.059 1.281.292 2.394 1.272 3.374.98.98 2.093 1.213 3.374 1.272C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.281-.059 2.394-.292 3.374-1.272.98-.98 1.213-2.093 1.272-3.374.059-1.28.072-1.69.072-7.539 0-5.849-.013-6.259-.072-7.539-.059-1.281-.292-2.394-1.272-3.374-.98-.98-2.093-1.213-3.374-1.272C15.668.013 15.259 0 12 0zm0 5.838A6.162 6.162 0 0 0 5.838 12 6.162 6.162 0 0 0 12 18.162 6.162 6.162 0 0 0 18.162 12 6.162 6.162 0 0 0 12 5.838zm0 10.162A4 4 0 1 1 12 8a4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0z"/></svg>
+                </a>
+                <a href="https://threads.net" target="_blank" title="Threads" style="font-size:1.3em; font-family:Arial,sans-serif; font-weight:bold;">
+                    @
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="banner">
+        歡迎來到我的個人網站
+    </div>
+    <div class="container">
+        <section id="about" class="section">
+            <h2>個人簡介</h2>
+            <p>您好，我是一名網頁設計師，熱愛前端技術與創意設計。歡迎參觀我的作品集！</p>
+        </section>
+        <section id="portfolio" class="section">
+            <h2>作品集</h2>
+            <div class="portfolio">
+                <div class="portfolio-item">
+                    <h3>作品一</h3>
+                    <p>這是我的第一個作品，使用HTML/CSS製作。</p>
+                </div>
+                <div class="portfolio-item">
+                    <h3>作品二</h3>
+                    <p>這是我的第二個作品，加入了JavaScript互動效果。</p>
+                </div>
+                <div class="portfolio-item">
+                    <h3>作品三</h3>
+                    <p>這是我的第三個作品，響應式設計。</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
